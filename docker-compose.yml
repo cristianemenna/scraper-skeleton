@@ -1,0 +1,16 @@
+version: "3.6"
+services:
+  postgres:
+    image: postgres
+    container_name: scraper-postgres
+    ports: 
+      - 5431:5432
+    environment:
+      POSTGRES_DB: scraper
+      POSTGRES_USER: scraper
+      POSTGRES_PASSWORD: password
+    volumes:
+      - scraper-db:/var/lib/postgresql/data
+        
+volumes:
+  scraper-db:
