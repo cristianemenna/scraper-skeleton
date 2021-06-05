@@ -3,8 +3,6 @@ import { Connection } from '../database/connection';
 import { EntityManager } from '../database/entity-manager';
 import { GithubProfileService } from '../service/github';
 
-const puppeteer = require('puppeteer');
-
 export class Controller {
   public browser: Browser;
 

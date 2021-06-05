@@ -1,6 +1,6 @@
-const puppeteer = require('puppeteer');
 import { Browser } from "puppeteer";
 import { Controller } from "./src/controller/controller";
+import puppeteer from 'puppeteer';
 
 (async () => {
   const browser = await puppeteer.launch({

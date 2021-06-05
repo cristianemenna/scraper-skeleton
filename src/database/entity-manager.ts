@@ -3,7 +3,7 @@ import { UserType } from "../types/user.type";
 import { Connection } from "./connection";
 
 export class EntityManager {
-  public connection = null as any;
+  public connection: any;
 
   public constructor(connection: Connection) {
     this.connection = connection;
